@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Superstore Sales Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="container">
+            <h1>US Superstore Sales Analysis Dashboard</h1>
+            <p class="header-subtitle">Key Performance Insights & Business Intelligence</p>
+            <p class="header-description">Comprehensive analysis of sales performance data covering 2,121 orders across multiple categories, regions, and customer segments</p>
+        </div>
+    </header>
+
+    <!-- Key Metrics Overview -->
+    <section class="metrics-section">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card positive">
+                    <div class="metric-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Total Sales</h3>
+                        <p class="metric-value">$742,508</p>
+                    </div>
+                </div>
+                
+                <div class="metric-card positive">
+                    <div class="metric-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Total Profit</h3>
+                        <p class="metric-value">$18,448</p>
+                    </div>
+                </div>
+                
+                <div class="metric-card warning">
+                    <div class="metric-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Profit Margin</h3>
+                        <p class="metric-value">2.48%</p>
+                    </div>
+                </div>
+                
+                <div class="metric-card neutral">
+                    <div class="metric-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Total Orders</h3>
+                        <p class="metric-value">2,121</p>
+                    </div>
+                </div>
+                
+                <div class="metric-card neutral">
+                    <div class="metric-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Avg Order Value</h3>
+                        <p class="metric-value">$349.83</p>
+                    </div>
+                </div>
+                
+                <div class="metric-card negative">
+                    <div class="metric-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Loss-making Orders</h3>
+                        <p class="metric-value">531 (25.0%)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <div class="container">
+            
+            <!-- Category Performance Section -->
+            <section class="analysis-section">
+                <h2>Product Category Analysis</h2>
+                <div class="section-content">
+                    <div class="chart-container">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/a2f38bda3190cc221c96bb97c7ffb637/88232aa9-a8e8-4e94-bc90-6fa9f4fe7bc3/82bd13cf.png" 
+                             alt="Category Performance Chart" 
+                             class="chart-image"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="chart-fallback" style="display: none;">
+                            <div class="fallback-content">
+                                <i class="fas fa-chart-bar"></i>
+                                <p>Category Performance Visualization</p>
+                                <small>Chart temporarily unavailable</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-table">
+                        <table class="performance-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Sales</th>
+                                    <th>Profit Margin</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="positive-row">
+                                    <td>Technology</td>
+                                    <td>$255,595</td>
+                                    <td>11.04%</td>
+                                    <td><span class="status status--success">Best Performing</span></td>
+                                </tr>
+                                <tr class="neutral-row">
+                                    <td>Office Supplies</td>
+                                    <td>$244,259</td>
+                                    <td>5.00%</td>
+                                    <td><span class="status status--info">Moderate</span></td>
+                                </tr>
+                                <tr class="negative-row">
+                                    <td>Furniture</td>
+                                    <td>$242,655</td>
+                                    <td>-9.06%</td>
+                                    <td><span class="status status--error">Loss-making</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="insights-box">
+                    <p><strong>Key Insight:</strong> Furniture category is problematic with negative margins (-9.06%), requiring immediate attention to pricing and cost strategies.</p>
+                </div>
+            </section>
+
+            <!-- Regional Performance Section -->
+            <section class="analysis-section">
+                <h2>Regional Analysis</h2>
+                <div class="regional-grid">
+                    <div class="region-card best">
+                        <h4>West Region</h4>
+                        <p class="region-sales">$197,863</p>
+                        <p class="region-margin">5.45% margin</p>
+                        <span class="region-status">Best Region</span>
+                    </div>
+                    <div class="region-card good">
+                        <h4>East Region</h4>
+                        <p class="region-sales">$186,550</p>
+                        <p class="region-margin">4.69% margin</p>
+                        <span class="region-status">Strong</span>
+                    </div>
+                    <div class="region-card warning">
+                        <h4>Central Region</h4>
+                        <p class="region-sales">$182,341</p>
+                        <p class="region-margin">-0.68% margin</p>
+                        <span class="region-status">Concerning</span>
+                    </div>
+                    <div class="region-card poor">
+                        <h4>South Region</h4>
+                        <p class="region-sales">$175,755</p>
+                        <p class="region-margin">0.08% margin</p>
+                        <span class="region-status">Marginal</span>
+                    </div>
+                </div>
+                <div class="insights-box">
+                    <p><strong>Key Insight:</strong> Significant regional disparities exist, with West region outperforming others and Central region showing losses.</p>
+                </div>
+            </section>
+
+            <!-- Customer Segment Section -->
+            <section class="analysis-section">
+                <h2>Customer Segment Performance</h2>
+                <div class="section-content">
+                    <div class="chart-container">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/a2f38bda3190cc221c96bb97c7ffb637/08a69f98-da6f-41bb-a44c-fe73155fed0f/905fe081.png" 
+                             alt="Segment Performance Chart" 
+                             class="chart-image"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="chart-fallback" style="display: none;">
+                            <div class="fallback-content">
+                                <i class="fas fa-users"></i>
+                                <p>Customer Segment Analysis</p>
+                                <small>Chart temporarily unavailable</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segment-summary">
+                        <div class="segment-item">
+                            <h4>Consumer Segment</h4>
+                            <p>Sales: $334,546 | Margin: 2.63%</p>
+                            <span class="segment-note">Highest sales volume</span>
+                        </div>
+                        <div class="segment-item">
+                            <h4>Corporate Segment</h4>
+                            <p>Sales: $234,587 | Margin: 2.66%</p>
+                            <span class="segment-note">Best profit margin</span>
+                        </div>
+                        <div class="segment-item">
+                            <h4>Home Office Segment</h4>
+                            <p>Sales: $173,375 | Margin: 1.97%</p>
+                            <span class="segment-note">Lowest performance</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Monthly Trends Section -->
+            <section class="analysis-section">
+                <h2>Seasonal Performance Analysis</h2>
+                <div class="section-content">
+                    <div class="chart-container full-width">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/a2f38bda3190cc221c96bb97c7ffb637/1a1fe8c0-8082-46d7-99aa-3bc417e821d0/b02a743b.png" 
+                             alt="Monthly Trends Chart" 
+                             class="chart-image"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="chart-fallback" style="display: none;">
+                            <div class="fallback-content">
+                                <i class="fas fa-chart-line"></i>
+                                <p>Monthly Sales & Profit Trends</p>
+                                <small>Chart temporarily unavailable</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="insights-box">
+                    <p><strong>Key Insights:</strong> Strong Q4 performance with November-December peak. Clear seasonal patterns indicate optimal timing for marketing campaigns and inventory planning.</p>
+                </div>
+            </section>
+
+            <!-- Top Subcategories Section -->
+            <section class="analysis-section">
+                <h2>Top/Bottom Performing Subcategories</h2>
+                <div class="subcategory-grid">
+                    <div class="subcategory-section">
+                        <h4>Best Performers</h4>
+                        <div class="subcategory-item positive">
+                            <span class="subcategory-name">Phones</span>
+                            <span class="subcategory-sales">$89,457</span>
+                            <span class="subcategory-profit positive">+$12,346</span>
+                        </div>
+                        <div class="subcategory-item positive">
+                            <span class="subcategory-name">Storage</span>
+                            <span class="subcategory-sales">$56,789</span>
+                            <span class="subcategory-profit positive">+$7,890</span>
+                        </div>
+                        <div class="subcategory-item positive">
+                            <span class="subcategory-name">Binders</span>
+                            <span class="subcategory-sales">$45,679</span>
+                            <span class="subcategory-profit positive">+$5,432</span>
+                        </div>
+                    </div>
+                    <div class="subcategory-section">
+                        <h4>Worst Performers</h4>
+                        <div class="subcategory-item negative">
+                            <span class="subcategory-name">Chairs</span>
+                            <span class="subcategory-sales">$67,832</span>
+                            <span class="subcategory-profit negative">-$8,901</span>
+                        </div>
+                        <div class="subcategory-item negative">
+                            <span class="subcategory-name">Tables</span>
+                            <span class="subcategory-sales">$54,322</span>
+                            <span class="subcategory-profit negative">-$6,789</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discount Impact Analysis -->
+            <section class="analysis-section">
+                <h2>Discount Impact on Profitability</h2>
+                <div class="discount-analysis">
+                    <div class="discount-item">
+                        <h4>No Discount</h4>
+                        <p>Orders: 1,061</p>
+                        <p class="profit-positive">Avg Profit: $25.67</p>
+                    </div>
+                    <div class="discount-item">
+                        <h4>Low Discount</h4>
+                        <p>Orders: 636</p>
+                        <p class="profit-negative">Avg Profit: -$8.90</p>
+                    </div>
+                    <div class="discount-item">
+                        <h4>High Discount</h4>
+                        <p>Orders: 424</p>
+                        <p class="profit-negative">Avg Profit: -$23.45</p>
+                    </div>
+                </div>
+                <div class="insights-box">
+                    <p><strong>Key Insight:</strong> Clear inverse relationship between discounts and profitability. Higher discounts lead to losses - discount strategy requires optimization.</p>
+                </div>
+            </section>
+
+            <!-- Key Insights Summary -->
+            <section class="summary-section">
+                <h2>Critical Business Insights</h2>
+                <div class="insights-list">
+                    <div class="insight-item critical">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Furniture category requires immediate attention with -9.06% margin</p>
+                    </div>
+                    <div class="insight-item positive">
+                        <i class="fas fa-trophy"></i>
+                        <p>Technology category is most profitable at 11.04% margin</p>
+                    </div>
+                    <div class="insight-item warning">
+                        <i class="fas fa-chart-line-down"></i>
+                        <p>25% of orders are loss-making - review pricing strategy</p>
+                    </div>
+                    <div class="insight-item info">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Strong seasonality with Q4 peak performance opportunities</p>
+                    </div>
+                    <div class="insight-item warning">
+                        <i class="fas fa-percentage"></i>
+                        <p>Discount strategy needs optimization to improve margins</p>
+                    </div>
+                    <div class="insight-item warning">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Central region underperforming with negative margins</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

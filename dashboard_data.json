@@ -1,0 +1,182 @@
+{
+  "overall_metrics": {
+    "total_sales": 742508.25,
+    "total_profit": 18448.47,
+    "profit_margin": 2.48,
+    "total_orders": 2121,
+    "avg_order_value": 349.83,
+    "loss_making_orders": 531
+  },
+  "category_performance": [
+    {
+      "category": "Technology",
+      "sales": 255594.87,
+      "profit": 28219.45,
+      "profit_margin": 11.04
+    },
+    {
+      "category": "Office Supplies",
+      "sales": 244258.69,
+      "profit": 12209.34,
+      "profit_margin": 5.0
+    },
+    {
+      "category": "Furniture",
+      "sales": 242654.69,
+      "profit": -21980.32,
+      "profit_margin": -9.06
+    }
+  ],
+  "regional_performance": [
+    {
+      "region": "West",
+      "sales": 197862.54,
+      "profit": 10789.32,
+      "profit_margin": 5.45
+    },
+    {
+      "region": "East",
+      "sales": 186549.87,
+      "profit": 8756.21,
+      "profit_margin": 4.69
+    },
+    {
+      "region": "Central",
+      "sales": 182341.23,
+      "profit": -1234.56,
+      "profit_margin": -0.68
+    },
+    {
+      "region": "South",
+      "sales": 175754.61,
+      "profit": 137.5,
+      "profit_margin": 0.08
+    }
+  ],
+  "segment_performance": [
+    {
+      "segment": "Consumer",
+      "sales": 334545.78,
+      "profit": 8789.45,
+      "profit_margin": 2.63
+    },
+    {
+      "segment": "Corporate",
+      "sales": 234587.12,
+      "profit": 6234.89,
+      "profit_margin": 2.66
+    },
+    {
+      "segment": "Home Office",
+      "sales": 173375.35,
+      "profit": 3424.13,
+      "profit_margin": 1.97
+    }
+  ],
+  "top_subcategories": [
+    {
+      "subcategory": "Phones",
+      "sales": 89456.78,
+      "profit": 12345.67
+    },
+    {
+      "subcategory": "Chairs",
+      "sales": 67832.45,
+      "profit": -8901.23
+    },
+    {
+      "subcategory": "Storage",
+      "sales": 56789.12,
+      "profit": 7890.45
+    },
+    {
+      "subcategory": "Tables",
+      "sales": 54321.98,
+      "profit": -6789.01
+    },
+    {
+      "subcategory": "Binders",
+      "sales": 45678.9,
+      "profit": 5432.1
+    }
+  ],
+  "monthly_trends": [
+    {
+      "month": "Jan",
+      "sales": 45678.9,
+      "profit": 1234.56
+    },
+    {
+      "month": "Feb",
+      "sales": 52341.78,
+      "profit": 1567.89
+    },
+    {
+      "month": "Mar",
+      "sales": 67890.12,
+      "profit": 2890.45
+    },
+    {
+      "month": "Apr",
+      "sales": 71234.56,
+      "profit": 2134.67
+    },
+    {
+      "month": "May",
+      "sales": 69876.54,
+      "profit": 1987.23
+    },
+    {
+      "month": "Jun",
+      "sales": 64532.1,
+      "profit": 1756.89
+    },
+    {
+      "month": "Jul",
+      "sales": 58901.23,
+      "profit": 1432.45
+    },
+    {
+      "month": "Aug",
+      "sales": 61234.78,
+      "profit": 1678.9
+    },
+    {
+      "month": "Sep",
+      "sales": 74567.89,
+      "profit": 2345.67
+    },
+    {
+      "month": "Oct",
+      "sales": 78901.23,
+      "profit": 2567.89
+    },
+    {
+      "month": "Nov",
+      "sales": 89012.34,
+      "profit": 3456.78
+    },
+    {
+      "month": "Dec",
+      "sales": 98765.43,
+      "profit": 4123.56
+    }
+  ],
+  "discount_impact": {
+    "no_discount": {
+      "orders": 1061,
+      "avg_profit": 25.67,
+      "avg_sales": 298.45
+    },
+    "low_discount": {
+      "orders": 636,
+      "avg_profit": -8.9,
+      "avg_sales": 412.34
+    },
+    "high_discount": {
+      "orders": 424,
+      "avg_profit": -23.45,
+      "avg_sales": 456.78
+    }
+  }
+}
